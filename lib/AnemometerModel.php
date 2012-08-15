@@ -220,6 +220,9 @@ class AnemometerModel {
         if ($this->mysqli->connect_errno) {
             throw new Exception($this->mysqli->connect_error);
         }
+        if (isset($ds['charset'])) {
+            $this->mysqli->set_charset($ds['charset']);
+        }
     }
 
     /**

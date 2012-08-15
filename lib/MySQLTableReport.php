@@ -29,6 +29,7 @@
  *      'user'  => $user, // the user credential
  *      'password' => $pass, // the password for the user
  *      'db'    => $db, // the database name
+ *      'charset' => $charset, // optional default client character set
  * );
  *
  * $tables = array(
@@ -193,6 +194,9 @@ class MySQLTableReport {
 
         if ($this->mysqli->connect_errno) {
             throw new Exception($this->mysqli->connect_error);
+        }
+        if (isset($ds['charset'])) {
+            $this->mysqli->set_charset($ds['charset']);
         }
     }
 
