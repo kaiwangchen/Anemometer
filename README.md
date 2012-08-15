@@ -93,3 +93,5 @@ Phpdocs for this tool can be found in the "docs" sub-directory of the project.
 ### Dependencies ###
 
 This application requires an Apache webserver with PHP 5.3+ and a MySQL database that contains the data aggregated from MySQL slow query logs.
+
+The original box version depends on external sources google-code-prettify and jquery-ui, which is unfriendly to users with poor internet connection. This fork eliminates such dependencies by incorporating them.
