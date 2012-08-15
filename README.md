@@ -63,6 +63,7 @@ The sample config explains every setting you may want to change in it.  At the v
     	'db'	=> 'slow_query_log',
     	'user'	=> 'anemometer',
     	'password' => 'superSecurePass',
+    	'charset' => 'utf8',
     	'tables' => array(
     		'global_query_review' => 'fact',
     		'global_query_review_history' => 'dimension'

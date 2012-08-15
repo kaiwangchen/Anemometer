@@ -38,6 +38,7 @@ $conf['datasources']['localhost'] = array(
 	'db'	=> 'slow_query_log',
 	'user'	=> 'root',
 	'password' => '',
+	'charset' => 'utf8',
 	'tables' => array(
 		'global_query_review' => 'fact',
 		'global_query_review_history' => 'dimension'
